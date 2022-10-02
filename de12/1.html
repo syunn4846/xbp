@@ -39,12 +39,12 @@
       </ul><br>
 
       　2種類のリポジトリに分けることで、<br>
-      　普段の作業はそれぞれのユーザーが手元のローカルリポジトリで行い、<br>
+      　普段の作業はそれ   ぞれのユーザーが手元のローカルリポジトリで行い、<br>
       　作業内容を共有するときにリモートリポジトリで公開するという使い方になる。<br>
       　このため、リモートリポジトリを介して他のユーザーの作業内容を把握する事が可能である。
 
       <div>
-        写真を入れる
+      　<img src="./images/リモートからローカル.jpg"width="50%">
       </div><br>
 
       <h2>コミット（commit）</h2><br>
@@ -76,79 +76,86 @@
     <br> 
     　　ここまでの用語を図で表すとこのようになる<br>
 
-     　　　写真を入れる<br>
-
-    
-
-    
-
-
-
-
-
+    　　<img src="./images/ローカル.jpg"width="50%"><br>
 
     </div>
 
-    <div>
-      <h2>作品一覧</h2>
-      「ピンクとグレー」<br>
-      「閃光スクランブル」<br>
-      「Burn.」<br>
-      「傘を持たない蟻たちは」<br>
-      「チュベローズで待ってる」<br>
-      「オルタネート」<br>
-      「出来ることならスティードで」<br>
-    </div><br>
+
+     <div>
+      <font color="red"><h1>htmlについて</h1></font><br>
+
+    　HTMLとは、ハイパーテキスト・マークアップ・ランゲージ（Hyper Text Markup Language）<br>
+    　の略である。<br>
+    　マークアップと言われる文章構成の指示をコンピュータが理解できる形で<br>
+    　表した言語のことである。<br>
+    　webサイトのほどんどがHTMLで構成されている。<br>
+    　HTMLの指示によって、<br>
+    　「見出し」を作ったり、文字の太さ・色・背景色などで装飾することができる。<br>
+    <br>
+    　HTMLを理解する上で、重要な用語となるのが「タグ」・「要素」である。<br>
+    　「タグ」とは、文字（テキスト）に意味を与える印のようなものである。<br>
+    　また「要素」とは、文字列などをタグで囲んだ情報の単位ことをいう。<br>
+     </div><br>
     
+
     <div>
-         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
-    画像を表示（50%）<br>
-    <img src="./images/testimage.png"width="50%"><br>
-    
-    画像を表示（30%）<br>
-    <img src="./images/testimage.png"width="30%"><br><br>
+      <h2>HTMLタグの種類</h2>
+      <ul>
+        <li>h 見出し</li><br>
+        <li>p 段落</li><br>
+        <li>a リンクを挿入</li><br>
+        <li>li 箇条書き（数字→ol　点のみ→ul）</li><br>
+        <li>br 改行</li><br>
+        などなど…！！
+      </ul><br>
 
-    画像を表示（10%）<br>
-    <img src="../images/0_XBlogo.png"width="10%"><br>
-
-    </div><br><br>
-
-
-             <!-- ③↓に箇条書きをしてみよう -->
+    </div>
     <div>
-    NEWSメンバー紹介
-     <ol>
-        <li>加藤シゲアキ</li>
-        <li>増田貴久</li>
-        <li>小山慶一郎</li>
-     </ol><br>
+      <h2>HTMLでできる様々なこと</h2>
 
-    NEWS応援歌
-     <ul>
-    <li>U R not alone</li>
-    <li>フルスイング</li>
-    </ul>
+    <div>
+      <h3>画像の表示の仕方</h3>
+    　画像を表示したい場合は、以下を入力する<br>
+    　＜img src="写真のファイル名"width="好みの倍率"＞<br><br>
+    　実際にこの写真を挿入してみた（voyageのロコモコ丼…美味しかったです）<br><br>
+    　<img src="./images/ロコモコ.jpg"width="50%"><br><br>
+    　これを挿入するには<br>
+    　＜img src="./images/ロコモコ.jpg"width="50%"＞<br>
+    　と入力する<br><br>
+     </div>
+
+    <div>
+      　<h3>リンクの表示の仕方</h3>
+      　リンクを表示したい場合は、以下を入力する<br><br>
+      　＜a href="挿入したいリンク"＞表示名＜/a＞<br><br>
+      　実際に表示させてみた<br><br>
+      　<a href="https://www.kanagawa-u.ac.jp/">神奈川大学HP</a><br><br>
+      　これを挿入するには<br>
+      　＜a href="https://www.kanagawa-u.ac.jp/">神奈川大学HP＜/a＞<br>
+      　と入力する<br><br>
     </div>
 
-         <!-- ④↓に外部リンクを作ってみよう -->
-
     <div>
-     <a href="./index.html">デザイン演習I・IIトップページ</a><br>
-     <a href="../index.html">XBPトップページ</a><br>
-     <a href="http://www.yahoo.co.jp/"target="-blank">Yahoo</a><br>
-     <a href="./fils/test.pdf"target="-blank">pdfファイル</a>
+      　<h3>YouTubeの貼り付けの仕方</h3>
+      　YouTubeの貼り付けをするには、<br>
+      　YouTubeにてまず貼り付けたい動画の「共有」をクリック<br><br>
+      　<img src="./images/スクリーンショット 2022-10-02 15.40.26.png"width="50%"><br><br>
+      　次に、「埋め込む」をクリック<br><br>
+      　<img src="./images/スクリーンショット 2022-10-02 15.40.44.png"width="50%"><br><br>
+      　そして、出てきた埋め込みコードをコピーする<br>
+      　（この時、開始位置を設定することもできる）<br><br>
+      　<img src="./images/スクリーンショット 2022-10-02 15.41.15.png"width="50%"><br><br>
+      　そして、以下を入力<br>
+      　＜div class="video"＞<br>
+      　コピーした埋め込みコード<br>
+      　＜/div＞<br><br>
+      　実際に表示させてみた<br><br>
+      　<idv class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0yYkiiRFiJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </idv>
     </div><br>
-
-    <div>
-     <a href="https://www.kadokawa.co.jp/product/322112000476/">
-        加藤シゲアキ作家10周年記念BOOK</a>
-    </div><br>
-
-
-    <div class="video">
-    <h3>加藤シゲアキ　ショートフィルム　「渋谷と1と0と」</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xCKepf9uMaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
 
 </body>
 </html>
