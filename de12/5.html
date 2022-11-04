@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>Maho　課題</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1>外部ライブラリ</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+  <div>
+    <h2>やりたかったこと</h2><br>
+    私たちの班は、バイトの給料管理ができたらいいと思い、そのために必要なステップを考えた<br>
+    1、給料管理のために作ったエクセルのファイルを呼び出す<br>
+    2、そのファイルから計算したいデータを取り出す<br>
+    3、そのデータを計算する<br>
+    この手順を踏むことによって、給料管理ができるのではないかと考えた。<br>
+    そして、このステップのうち、1である「エクセルを呼び出す」ことに取り組んだ<br>
+    そのために、外部ライブラリを使ってできるか検索した<br>
+    しかし、エクセルを「呼び出す」のではなく、「書き込む」ということしか出来なかった<br>
+    これは、検索力が足りなかったためと考えられる<br>
+  </div><br><br>
+
+  <div>
+    <h2>ソースコード成功版</h2>
+<pre><code><p style="background-color: greenyellow;">
+        import pandas as pd
+        import numpy as np
+        
+        row0 = [0, 1, 2, 3, 4]
+        row1 = [1, 10, 20, 30, 40]
+        row2 = [10, 100, 200, 300, 400]
+        row3 = [np.nan, np.nan, 'aaa', np.nan, np.nan]
+        row4 = [0.1, 0.12, 0.123, np.nan, 0.12345]
+        
+        df = pd.DataFrame([row0,row1,row2,row3, row4])
+        df.columns = ['col0', 'col1', 'col2' ,'col3', 'col4']
+        df.index = ['row0', 'row1', 'row2', 'row3', 'row4']
+        
+        df
+        
+        
+        df.to_excel('~/desktop/output.xlsx')
+        
+    </code></pre></span><br><br>
+    これを実行するとエクセルのファイルが生成された<br>
+    <img src="./images/aikon.png"width="50%"><br><br>
+    <img src="./images/naiyo.png"width="50%"><br>
+  </div><br><br>
+
+
+  <div>
+    <h2>ソースコード失敗版</h2>
+<pre><code><p style="background-color: greenyellow;">
+            import pandas as pd
+            import numpy as np
+            
+            row0 = [0, 1, 2, 3, 4]
+            row1 = [1, 10, 20, 30, 40]
+            row2 = [10, 100, 200, 300, 400]
+            row3 = [np.nan, np.nan, 'aaa', np.nan, np.nan]
+            row4 = [0.1, 0.12, 0.123, np.nan, 0.12345]
+            
+            df = pd.DataFrame([row0,row1,row2,row3, row4])
+            df.columns = ['col0', 'col1', 'col2' ,'col3', 'col4']
+            df.index = ['row0', 'row1', 'row2', 'row3', 'row4']
+            
+            df
+            ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+            import pandas as pd
+            ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+            df.to_excel('~/desktop/output.xlsx')
+            
+        </code></pre></span>
+      </div><br><br>
+
+<div>
+  <h2>感想</h2>
+   初めに記述したように、やりたいと試みたことは「エクセルを呼び出す」ということだった<br>
+   しかし、様々なページのエクセルを読み込む方法を調べても、うまく行かなかった<br>
+   まだ、どうしてうまくいかないのかも不明である<br>
+   今回行った「書き出す」というものも、初めはエラーが出てしまったのだが、<br>
+   失敗版の点線部分を消去したことにより機能した<br>
+   理由は、最初に同じ文を記述していたためだと考えている<br>
+   これらについても、表示内容を変えたりできるようなので、そちらも試してみたい<br>
+</div>
