@@ -55,7 +55,6 @@ span.blackback{
 
 /* 背景 */
   .bg_pattern {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
