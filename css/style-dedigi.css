@@ -70,13 +70,6 @@ span.blackback{
   }
 /* 背景 */
 
-/*まずはお決まりのボックスサイズ算出をborer-boxに */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
 
 html {
   -webkit-box-sizing: border-box;
